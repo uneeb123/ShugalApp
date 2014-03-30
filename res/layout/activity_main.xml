@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#450E0E"
+    android:orientation="vertical"
+    tools:context="com.pakistan.shugal.MainActivity" >
+
+    <TextView
+        android:id="@+id/joke_text"
+        android:layout_width="311dp"
+        android:layout_height="372dp"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="vertical"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_1" />
+    
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           ads:adSize="BANNER"
+                           ads:adUnitId="ca-app-pub-5489803849031898/1155173164"/>
+
+</LinearLayout>
